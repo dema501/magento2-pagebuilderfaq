@@ -1,0 +1,45 @@
+//
+//  FAQ item styles
+//  _____________________________________________
+
+& when (@media-common = true) {
+    [data-content-type="faq-item"] {
+        border-top: 1px solid #cccccc !important;
+        border-right: 1px solid #cccccc !important;
+        border-left: 1px solid #cccccc !important;
+
+        .lib-list-reset-styles();
+        overflow: hidden;
+
+        [data-role="collapsible"] {
+            font-weight: bold;
+            line-height: 2;
+            font-size: 1rem;
+
+           .lib-css(margin, 0);
+           .lib-css(padding, 0);
+
+            &.active {
+                margin-bottom: 0.5rem;
+            }
+
+            &:before {
+                font-family: @icons-pagebuilder__font-name;
+                margin-right: 5px;
+                font-size: 12px;
+                left: 15px;
+                position: absolute;
+            }
+
+            &[aria-expanded="true"]:before {
+                content: @icon-pagebuilder-caret-up__content;
+                line-height: 3;
+            }
+
+            &[aria-expanded="false"]:before {
+                content: @icon-pagebuilder-caret-down__content;
+                line-height: 3;
+            }
+        }
+    }
+}
