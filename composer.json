@@ -1,9 +1,9 @@
 {
     "name": "liftmode/module-page-builder-faq",
     "description": "PageBuilder FAQ module",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "require": {
-        "php": "~7.1.3||~7.2.0",
+        "php": "~7.1.3|~7.2.0|~7.3.0",
         "magento/framework": "~102.0",
         "magento/module-page-builder": "~1.0"
     },
